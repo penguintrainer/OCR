@@ -1,5 +1,7 @@
+from my_ocr import gui
+
 def _main():
-    print("Hello World")
+    gui.massage_info("Hello World")
 
 def main():
     try:

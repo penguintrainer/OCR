@@ -1,8 +1,14 @@
 from pathlib import Path
 
-from tkinter import ttk
+from tkinter import Tk
 import tkinter.filedialog as tkfd
 import tkinter.messagebox as tkmsg
+
+def first_gui() -> None:
+    root = Tk()    
+    root.lift()
+    root.attributes("-alpha",0)
+    root.protocol("WM_DELETE_WINDOW",(lambda: "pass")())
 
 def massage_info(msg:str) -> None:
     """情報表示
